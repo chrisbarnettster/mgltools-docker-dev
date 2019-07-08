@@ -14,7 +14,7 @@ LANG=en_US.UTF-8
 ENV PROGRAMS_ROOT=$MGL_HOME/programs \
 MGL_LINK=http://mgltools.scripps.edu/downloads/downloads/tars/releases/REL1.5.6/mgltools_x86_64Linux2_$MGL_VERSION.tar.gz
 
-RUN apt-get update && apt-get install -y wget tar locales libx11-6 libx11-dev x11-utils libglu1-mesa libglu1-mesa-dev 
+RUN apt-get update && apt-get install -y wget tar locales libx11-6 libx11-dev x11-utils libglu1-mesa libglu1-mesa-dev x11vnc git
 
 RUN locale-gen en_US.UTF-8 && dpkg-reconfigure locales
 
